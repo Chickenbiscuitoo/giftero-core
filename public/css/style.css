@@ -55,41 +55,90 @@ header > .l-subheader {
   position: relative !important;
   padding: 0 !important;
   margin: 0 !important;
-  width: 24px !important;
-  height: 24px !important;
 }
 .gf-header-menu .w-nav-control .w-nav-icon {
-  width: 24px !important;
-  height: 24px !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-@media only screen and (max-width: 1300px) {
+.gf-header-menu .w-nav-control .w-nav-icon > div {
+  border-radius: 2px !important;
+}
+.gf-header-menu .w-nav-control .w-nav-icon > div::before, .gf-header-menu .w-nav-control .w-nav-icon > div::after {
+  border-radius: 2px !important;
+}
+@media only screen and (min-width: 960px) {
+  .gf-header-menu > ul {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 3.125rem !important;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1220px) {
+  .gf-header-menu > ul {
+    gap: 2.425rem !important;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1150px) {
+  .gf-header-menu > ul {
+    gap: 1.75rem !important;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1100px) {
+  .gf-header-menu > ul {
+    font-size: 0.9375rem !important;
+    gap: 1.5rem !important;
+  }
+}
+@media only screen and (min-width: 960px) and (max-width: 1000px) {
+  .gf-header-menu > ul {
+    font-size: 0.875rem !important;
+    gap: 1.4rem !important;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .gf-header-menu > ul > li:has(#header-menu-footer) {
+    display: none !important;
+  }
+  .gf-header-menu > ul > li a {
+    font-weight: 500 !important;
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width: 960px) {
   html.w-nav-open {
     overflow: hidden !important;
   }
   html.w-nav-open header {
+    z-index: 5 !important;
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
   }
-  html.w-nav-open .gf-header-menu > ul {
+  .gf-header-menu > ul {
     min-height: calc(100dvh - var(--header-height)) !important;
-    padding: 0 !important;
+    display: flex !important;
+    gap: 0.9375rem !important;
     margin: var(--header-height) 0 0 0 !important;
+    padding-left: 2.53rem !important;
+    padding-right: 2.53rem !important;
+    padding-top: 1.75rem !important;
+    padding-bottom: 3.125rem !important;
     z-index: 900 !important;
     background-color: #fff !important;
   }
-  html.w-nav-open .gf-header-menu > ul > li {
+  .gf-header-menu > ul > li {
     margin: 0 !important;
+    padding: 0 !important;
   }
-  html.w-nav-open .gf-header-menu > ul > li:has(.gf-menu-footer) {
-    margin-top: auto !important;
+  .gf-header-menu > ul > li > a {
+    padding: 0 !important;
   }
-  html.w-nav-open .gf-header-menu > ul .w-nav-close {
+  .gf-header-menu > ul .w-nav-close {
     display: none !important;
   }
 }
+html,
+body,
 main {
   overflow-x: clip !important;
 }

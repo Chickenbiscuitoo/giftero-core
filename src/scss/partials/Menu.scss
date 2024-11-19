@@ -50,24 +50,11 @@
                 & > li {
                     margin: 0 !important;
 
-                    &:has(.op-menu-footer) {
+                    &:has(.gf-menu-footer) {
                         margin-top: auto !important;
                     }
 
                     & > a {
-                        padding-left: 1rem !important;
-                        padding-right: 1rem !important;
-                        padding-top: 0.90625rem !important;
-                        padding-bottom: 0.90625rem !important;
-
-                        border-bottom: 1px dotted $light-grey !important;
-
-                        font-size: 1rem !important;
-                        line-height: 1.3em !important;
-                        font-weight: 600;
-                        letter-spacing: 0.02em;
-                        text-align: left;
-                        color: $black !important;
                     }
                 }
 

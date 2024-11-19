@@ -7,3 +7,30 @@ section {
         padding-right: 1.25rem !important;
     }
 }
+
+// utils
+.col-flex {
+    & > .vc_column-inner {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+.col-flex-row {
+    & > .vc_column-inner {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+}
+
+.col-h-full {
+    & > .vc_column-inner {
+        height: 100% !important;
+    }
+}
+
+.gap {
+    &-10 {
+        gap: 10px !important;
+    }
+}

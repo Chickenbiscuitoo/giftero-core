@@ -1,0 +1,40 @@
+<div class="gf-form">
+    <div class="gf-form-group">
+        <span class="gf-form-group-label">Název firmy:</span>
+        [text contact-name id:contact-name]
+    </div>
+    <div class="gf-form-group">
+        <span class="gf-form-group-label">
+            Váš pracovní e-mail:<span style="color: red">*</span>
+        </span>
+        [email* contact-email id:contact-email]
+    </div>
+    <div class="gf-form-group">
+        <span class="gf-form-group-label">Váš telefon: </span>
+        [tel contact-tel id:contact-tel]
+    </div>
+    <div class="gf-form-group">
+        <span class="gf-form-group-label">Místo realizace (PSČ):</span>
+        [text contact-psc id:contact-psc]
+    </div>
+    <div class="gf-form-group">
+        <span class="gf-form-group-label">
+            Země::<span style="color: red">*</span>
+        </span>
+        [select* contact-country id:contact-country class:form-selectbox "Česko"
+        "Slovensko" "Maďarsko" "Poľsko"]
+    </div>
+    <div class="gf-form-group">
+        <span class="gf-form-group-label">Popis:</span>
+        [textarea contact-description id:contact-description]
+    </div>
+    <div class="gf-form-submit">
+        [submit id:contact-submit "Chci to probrat s expertem"]
+    </div>
+    <div class="gf-form-acceptance">
+        Odesláním formuláře souhlasíte se
+        <a href="/spracovani-osobnich-udaju" target="_blank"
+            >zpracováním osobních údajů</a
+        >.
+    </div>
+</div>

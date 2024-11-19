@@ -1,0 +1,5 @@
+$images-path: "/wp-content/plugins/giftero-core/public/images/";
+
+@function imagesUrl($file-path) {
+    @return url($images-path + $file-path);
+}

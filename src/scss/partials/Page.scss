@@ -1,0 +1,9 @@
+main {
+    overflow-x: clip !important;
+}
+
+.noscroll {
+    body {
+        overflow: hidden !important;
+    }
+}

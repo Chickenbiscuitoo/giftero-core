@@ -1,0 +1,29 @@
+.title {
+}
+
+.subtitle {
+}
+
+.text {
+    &-16 {
+        &:not(.unresponsive) {
+            @media only screen and (max-width: $tablet) {
+            }
+        }
+    }
+
+    &-14 {
+        &:not(.unresponsive) {
+            @media only screen and (max-width: $tablet) {
+            }
+        }
+    }
+}
+
+// general classes
+.text-nowrap {
+    white-space: nowrap;
+}
+.text-underline {
+    text-decoration: underline;
+}

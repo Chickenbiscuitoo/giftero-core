@@ -1,0 +1,19 @@
+.op-form {
+    &-group {
+        &-label {
+        }
+    }
+
+    &-submit {
+        p {
+            input[type="submit"] {
+            }
+
+            .wpcf7-spinner {
+            }
+        }
+    }
+
+    &-acceptance {
+    }
+}

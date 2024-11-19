@@ -6,17 +6,20 @@
 
 .text {
     &-16 {
-        &:not(.unresponsive) {
+        font-size: 16px;
+        line-height: 1.625em;
+
+        &:not(.text-unresponsive) {
             @media only screen and (max-width: $tablet) {
+                font-size: 14px;
+                line-height: 1.714em;
             }
         }
     }
 
     &-14 {
-        &:not(.unresponsive) {
-            @media only screen and (max-width: $tablet) {
-            }
-        }
+        font-size: 14px;
+        line-height: 1.5em;
     }
 }
 

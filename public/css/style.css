@@ -1,3 +1,18 @@
+.text-16 {
+  font-size: 16px;
+  line-height: 1.625em;
+}
+@media only screen and (max-width: 960px) {
+  .text-16:not(.text-unresponsive) {
+    font-size: 14px;
+    line-height: 1.714em;
+  }
+}
+.text-14 {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
 .text-nowrap {
   white-space: nowrap;
 }

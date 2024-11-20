@@ -265,6 +265,12 @@ main {
   padding-right: 20px !important;
 }
 @media only screen and (min-width: 960px) {
+  .swiper-section > .gf-columns-swiper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media only screen and (min-width: 960px) {
   .swiper-section > .gf-columns-swiper > .g-cols > .swiper-slide {
     flex-shrink: 1 !important;
   }

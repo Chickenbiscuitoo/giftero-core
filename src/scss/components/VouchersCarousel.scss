@@ -1,0 +1,99 @@
+.gf-vouchers-carousel {
+    & > .w-grid-list {
+        & > .owl-nav {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+
+            width: 100% !important;
+            height: auto !important;
+
+            margin: 0 !important;
+            padding: 0 !important;
+
+            position: absolute !important;
+            top: 28% !important;
+            left: 0 !important;
+
+            .owl-prev,
+            .owl-next {
+                z-index: 3 !important;
+                position: relative;
+
+                display: block !important;
+                width: 44px !important;
+                height: 44px !important;
+                margin: 0 !important;
+                padding: 0 !important;
+
+                background-color: $white !important;
+                box-shadow: 0px 10px 15px 0px #00000014 !important;
+                border-radius: 50% !important;
+
+                @media only screen and (max-width: $tablet) {
+                    width: 32px !important;
+                    height: 32px !important;
+                }
+
+                &::after {
+                    content: "" !important;
+                    display: block !important;
+                    width: 20px !important;
+                    height: 20px !important;
+                    margin: 0 !important;
+                    padding: 0 !important;
+
+                    position: absolute !important;
+                    top: 50% !important;
+                    left: 50% !important;
+                    transform: translate(-50%, -50%) !important;
+
+                    background-image: imagesUrl("arrow-simple.svg") !important;
+                    background-size: contain !important;
+                    background-repeat: no-repeat !important;
+                    background-position: center !important;
+                }
+
+                &::before {
+                    display: none !important;
+                }
+            }
+
+            .owl-prev {
+                transform: rotate(180deg) !important;
+            }
+
+            .owl-next {
+            }
+        }
+
+        & > .owl-dots {
+            padding: 0 !important;
+
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 8px !important;
+
+            & > .owl-dot {
+                & > span {
+                    margin: 0 !important;
+                    box-shadow: none !important;
+                    border: none !important;
+
+                    height: 6px !important;
+                    width: 6px !important;
+
+                    background-color: $blue !important;
+                    opacity: 0.2 !important;
+                }
+
+                &.active {
+                    & > span {
+                        opacity: 1 !important;
+                    }
+                }
+            }
+        }
+    }
+}

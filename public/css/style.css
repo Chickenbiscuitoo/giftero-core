@@ -283,3 +283,99 @@ main {
     display: none !important;
   }
 }
+
+.gf-vouchers-list-item {
+  transition: all 0.3s ease !important;
+  padding: 0 !important;
+}
+.gf-vouchers-list-item-button {
+  display: block !important;
+  margin-top: auto !important;
+}
+.gf-vouchers-list-item:hover {
+  box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.gf-vouchers-list-item:hover .gf-vouchers-list-item-link {
+  color: rgba(61, 56, 158, 0.8509803922) !important;
+}
+.gf-vouchers-list-item:hover .gf-vouchers-list-item-button {
+  background: rgba(61, 56, 158, 0.8509803922) !important;
+  border-color: rgba(61, 56, 158, 0.8509803922) !important;
+  color: #ffffff !important;
+}
+
+.gf-vouchers-carousel > .w-grid-list > .owl-nav {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 28% !important;
+  left: 0 !important;
+}
+.gf-vouchers-carousel > .w-grid-list > .owl-nav .owl-prev,
+.gf-vouchers-carousel > .w-grid-list > .owl-nav .owl-next {
+  z-index: 3 !important;
+  position: relative;
+  display: block !important;
+  width: 44px !important;
+  height: 44px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #fff !important;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.0784313725) !important;
+  border-radius: 50% !important;
+}
+@media only screen and (max-width: 960px) {
+  .gf-vouchers-carousel > .w-grid-list > .owl-nav .owl-prev,
+  .gf-vouchers-carousel > .w-grid-list > .owl-nav .owl-next {
+    width: 32px !important;
+    height: 32px !important;
+  }
+}
+.gf-vouchers-carousel > .w-grid-list > .owl-nav .owl-prev::after,
+.gf-vouchers-carousel > .w-grid-list > .owl-nav .owl-next::after {
+  content: "" !important;
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background-image: url("/wp-content/plugins/giftero-core/public/images/arrow-simple.svg") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.gf-vouchers-carousel > .w-grid-list > .owl-nav .owl-prev::before,
+.gf-vouchers-carousel > .w-grid-list > .owl-nav .owl-next::before {
+  display: none !important;
+}
+.gf-vouchers-carousel > .w-grid-list > .owl-nav .owl-prev {
+  transform: rotate(180deg) !important;
+}
+.gf-vouchers-carousel > .w-grid-list > .owl-dots {
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.gf-vouchers-carousel > .w-grid-list > .owl-dots > .owl-dot > span {
+  margin: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+  height: 6px !important;
+  width: 6px !important;
+  background-color: #0f0e2b !important;
+  opacity: 0.2 !important;
+}
+.gf-vouchers-carousel > .w-grid-list > .owl-dots > .owl-dot.active > span {
+  opacity: 1 !important;
+}

@@ -78,7 +78,7 @@ clickboxes === null || clickboxes === void 0 || clickboxes.forEach(function (cli
     var anchor = clickbox === null || clickbox === void 0 ? void 0 : clickbox.querySelector("a");
     // check if an <a> element was found
     if (anchor) {
-      // open URL in a new tab
+      // open URL
       location.href = anchor.href;
     }
   });

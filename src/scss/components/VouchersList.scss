@@ -1,0 +1,29 @@
+.gf-vouchers-list {
+    &-item {
+        transition: all 0.3s ease !important;
+
+        padding: 0 !important;
+
+        &-link {
+        }
+
+        &-button {
+            display: block !important;
+            margin-top: auto !important;
+        }
+
+        &:hover {
+            box-shadow: 0px 5px 40px 0px #0000001a;
+
+            .gf-vouchers-list-item-link {
+                color: $purple !important;
+            }
+
+            .gf-vouchers-list-item-button {
+                background: $purple !important;
+                border-color: $purple !important;
+                color: #ffffff !important;
+            }
+        }
+    }
+}

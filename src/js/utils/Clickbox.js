@@ -9,7 +9,7 @@ clickboxes?.forEach((clickbox) => {
         const anchor = clickbox?.querySelector("a");
         // check if an <a> element was found
         if (anchor) {
-            // open URL in a new tab
+            // open URL
             location.href = anchor.href;
         }
     });

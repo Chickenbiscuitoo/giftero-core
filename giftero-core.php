@@ -26,3 +26,7 @@ require_once(ROOT . "/backend/constants.php");
 
 // scripts/styles
 require_once(ROOT . '/backend/scripts.php');
+
+// CPT
+require_once(ROOT . '/backend/modules/vouchers/CPT/Vouchers.php');
+Vouchers::init();

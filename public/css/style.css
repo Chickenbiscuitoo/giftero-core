@@ -21,6 +21,27 @@
   text-decoration: underline;
 }
 
+.gf-overlay {
+  position: relative !important;
+  overflow: hidden !important;
+}
+.gf-overlay > * {
+  position: relative;
+  z-index: 2;
+}
+.gf-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.gf-overlay-blue::before {
+  background: linear-gradient(112deg, rgba(15, 14, 43, 0.8) 0%, rgba(15, 14, 43, 0.16) 100%);
+}
+
 .w-btn-wrapper {
   margin: 0 !important;
 }
@@ -126,7 +147,10 @@ header > .l-subheader {
   html.w-nav-open {
     overflow: hidden !important;
   }
-  html.w-nav-open header {
+  html.w-nav-open body {
+    margin-top: var(--header-height) !important;
+  }
+  html.w-nav-open body header {
     z-index: 5 !important;
     position: fixed !important;
     top: 0 !important;
@@ -182,4 +206,42 @@ main {
 }
 .modal .modal-close {
   cursor: pointer;
+}
+
+.gf-vouchers-grid-item {
+  position: relative !important;
+  overflow: hidden !important;
+}
+.gf-vouchers-grid-item > * {
+  position: relative;
+  z-index: 2;
+}
+.gf-vouchers-grid-item::before, .gf-vouchers-grid-item::after, .gf-vouchers-grid-item-btn {
+  transition: opacity 0.3s ease-in-out;
+}
+.gf-vouchers-grid-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(61, 56, 158, 0.8509803922);
+  opacity: 0;
+}
+.gf-vouchers-grid-item::before {
+  opacity: 1;
+}
+.gf-vouchers-grid-item-btn {
+  opacity: 0;
+}
+.gf-vouchers-grid-item:hover::after {
+  opacity: 1;
+}
+.gf-vouchers-grid-item:hover::before {
+  opacity: 0;
+}
+.gf-vouchers-grid-item:hover .gf-vouchers-grid-item-btn {
+  opacity: 1;
 }

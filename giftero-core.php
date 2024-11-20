@@ -30,3 +30,7 @@ require_once(ROOT . '/backend/scripts.php');
 // CPT
 require_once(ROOT . '/backend/modules/vouchers/CPT/Vouchers.php');
 Vouchers::init();
+
+// Taxonomies
+require_once(ROOT . '/backend/modules/vouchers/taxonomies/VoucherTypes.php');
+VoucherTypes::init();

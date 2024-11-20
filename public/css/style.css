@@ -75,6 +75,16 @@ section {
   gap: 10px !important;
 }
 
+@media only screen and (max-width: 960px) {
+  .hwrapper-responsive {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+.hwrapper-gap-20 {
+  gap: 1.25rem !important;
+}
+
 header > .l-subheader {
   padding-left: 2.5rem !important;
   padding-right: 2.5rem !important;
@@ -208,6 +218,10 @@ main {
   cursor: pointer;
 }
 
+.swiper-section > .l-section-h > .g-cols {
+  display: flex !important;
+}
+
 .gf-vouchers-grid-item {
   position: relative !important;
   overflow: hidden !important;
@@ -244,4 +258,28 @@ main {
 }
 .gf-vouchers-grid-item:hover .gf-vouchers-grid-item-btn {
   opacity: 1;
+}
+
+.swiper-section > .gf-columns-swiper {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+@media only screen and (min-width: 960px) {
+  .swiper-section > .gf-columns-swiper > .g-cols > .swiper-slide {
+    flex-shrink: 1 !important;
+  }
+}
+.swiper-section > .gf-columns-swiper .swiper-scrollbar {
+  position: static !important;
+  height: 2px !important;
+  margin-top: 2.875rem !important;
+  background: #ebebf7 !important;
+}
+.swiper-section > .gf-columns-swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  background: #504f75 !important;
+}
+@media only screen and (min-width: 960px) {
+  .swiper-section > .gf-columns-swiper .swiper-scrollbar {
+    display: none !important;
+  }
 }

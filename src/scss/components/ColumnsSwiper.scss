@@ -1,0 +1,30 @@
+.swiper-section {
+    & > .gf-columns-swiper {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+
+        & > .g-cols {
+            & > .swiper-slide {
+                @media only screen and (min-width: $tablet) {
+                    flex-shrink: 1 !important;
+                }
+            }
+        }
+
+        .swiper-scrollbar {
+            position: static !important;
+            height: 2px !important;
+            margin-top: 2.875rem !important;
+
+            background: $light !important;
+
+            .swiper-scrollbar-drag {
+                background: $light-purple !important;
+            }
+
+            @media only screen and (min-width: $tablet) {
+                display: none !important;
+            }
+        }
+    }
+}

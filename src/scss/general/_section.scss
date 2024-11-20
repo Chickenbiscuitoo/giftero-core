@@ -34,3 +34,19 @@ section {
         gap: 10px !important;
     }
 }
+
+// wrappers
+.hwrapper {
+    &-responsive {
+        @media only screen and (max-width: $tablet) {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+    }
+
+    &-gap {
+        &-20 {
+            gap: 1.25rem !important;
+        }
+    }
+}

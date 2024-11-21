@@ -1,15 +1,77 @@
 .gf-accordion {
     .w-tabs-sections {
         .w-tabs-section {
+            border-top: 1px solid $light !important;
+
+            padding-top: 1.25rem !important;
+            padding-bottom: 1.25rem !important;
+
+            transition: padding 0.3s ease !important;
+
+            @media only screen and (max-width: $tablet) {
+                padding-top: 0.9375rem !important;
+                padding-bottom: 0.9375rem !important;
+            }
+
+            &:last-of-type {
+                border-bottom: 1px solid $light !important;
+            }
+
             &.active {
+                padding-bottom: 2.5rem !important;
+
+                @media only screen and (max-width: $tablet) {
+                    padding-bottom: 1.875rem !important;
+                }
             }
 
             .w-tabs-section-header {
+                padding: 0 !important;
+                background: transparent !important;
+
                 .w-tabs-section-control {
+                    &::before,
+                    &::after {
+                        display: none !important;
+                    }
+
+                    display: block !important;
+                    width: 1.5rem !important;
+                    height: 1.5rem !important;
+
+                    background-image: imagesUrl("arrow-down.svg") !important;
                 }
             }
 
             .w-tabs-section-content {
+                position: relative !important;
+
+                margin-top: 0.625rem !important;
+                padding: 0 !important;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+
+                    background-image: imagesUrl("quote-icon.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &-h {
+                    padding-left: 2.6875rem !important;
+
+                    @media only screen and (max-width: $tablet) {
+                        padding-left: 1.875rem !important;
+                    }
+                }
             }
         }
     }

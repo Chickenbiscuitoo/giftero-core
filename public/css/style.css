@@ -252,6 +252,69 @@ main {
   left: 1.25rem;
 }
 
+.gf-accordion .w-tabs-sections .w-tabs-section {
+  border-top: 1px solid #ebebf7 !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+  transition: padding 0.3s ease !important;
+}
+@media only screen and (max-width: 960px) {
+  .gf-accordion .w-tabs-sections .w-tabs-section {
+    padding-top: 0.9375rem !important;
+    padding-bottom: 0.9375rem !important;
+  }
+}
+.gf-accordion .w-tabs-sections .w-tabs-section:last-of-type {
+  border-bottom: 1px solid #ebebf7 !important;
+}
+.gf-accordion .w-tabs-sections .w-tabs-section.active {
+  padding-bottom: 2.5rem !important;
+}
+@media only screen and (max-width: 960px) {
+  .gf-accordion .w-tabs-sections .w-tabs-section.active {
+    padding-bottom: 1.875rem !important;
+  }
+}
+.gf-accordion .w-tabs-sections .w-tabs-section .w-tabs-section-header {
+  padding: 0 !important;
+  background: transparent !important;
+}
+.gf-accordion .w-tabs-sections .w-tabs-section .w-tabs-section-header .w-tabs-section-control {
+  display: block !important;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  background-image: url("/wp-content/plugins/giftero-core/public/images/arrow-down.svg") !important;
+}
+.gf-accordion .w-tabs-sections .w-tabs-section .w-tabs-section-header .w-tabs-section-control::before, .gf-accordion .w-tabs-sections .w-tabs-section .w-tabs-section-header .w-tabs-section-control::after {
+  display: none !important;
+}
+.gf-accordion .w-tabs-sections .w-tabs-section .w-tabs-section-content {
+  position: relative !important;
+  margin-top: 0.625rem !important;
+  padding: 0 !important;
+}
+.gf-accordion .w-tabs-sections .w-tabs-section .w-tabs-section-content::before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background-image: url("/wp-content/plugins/giftero-core/public/images/quote-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gf-accordion .w-tabs-sections .w-tabs-section .w-tabs-section-content-h {
+  padding-left: 2.6875rem !important;
+}
+@media only screen and (max-width: 960px) {
+  .gf-accordion .w-tabs-sections .w-tabs-section .w-tabs-section-content-h {
+    padding-left: 1.875rem !important;
+  }
+}
+
 .gf-vouchers-grid-item {
   position: relative !important;
   overflow: hidden !important;

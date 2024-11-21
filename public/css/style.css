@@ -13,6 +13,14 @@
   line-height: 1.5em;
 }
 
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+.text-purple * {
+  color: rgba(61, 56, 158, 0.8509803922) !important;
+}
+
 .text-nowrap {
   white-space: nowrap;
 }
@@ -220,6 +228,28 @@ main {
 
 .swiper-section > .l-section-h > .g-cols {
   display: flex !important;
+}
+
+.gf-ul ul {
+  margin: 0;
+}
+.gf-ul ul > li {
+  list-style: none;
+  position: relative;
+  padding-left: 2.6875rem;
+}
+.gf-ul ul > li:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+.gf-ul ul > li::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #ae3d6c;
+  position: absolute;
+  top: 0.78125rem;
+  left: 1.25rem;
 }
 
 .gf-vouchers-grid-item {

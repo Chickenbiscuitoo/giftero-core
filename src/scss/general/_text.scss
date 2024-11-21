@@ -23,6 +23,22 @@
     }
 }
 
+// font weight
+.font-weight {
+    &-500 {
+        font-weight: 500 !important;
+    }
+}
+
+// text color
+.text {
+    &-purple {
+        * {
+            color: $purple !important;
+        }
+    }
+}
+
 // general classes
 .text-nowrap {
     white-space: nowrap;

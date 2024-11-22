@@ -2,3 +2,36 @@
 .w-btn-wrapper {
     margin: 0 !important;
 }
+
+.btn {
+    &-icon {
+        position: relative !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 1rem;
+            height: 1rem;
+
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &-link {
+            &::after {
+                background-image: imagesUrl("link-icon.svg");
+            }
+        }
+    }
+
+    &-gap {
+        &-10 {
+            gap: 0.625rem !important;
+        }
+    }
+}

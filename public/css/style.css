@@ -1,3 +1,8 @@
+.title-24 {
+  font-size: 1.5rem;
+  line-height: 1.25em;
+}
+
 .text-16 {
   font-size: 16px;
   line-height: 1.625em;
@@ -52,6 +57,28 @@
 
 .w-btn-wrapper {
   margin: 0 !important;
+}
+
+.btn-icon {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.btn-icon::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn-icon-link::after {
+  background-image: url("/wp-content/plugins/giftero-core/public/images/link-icon.svg");
+}
+.btn-gap-10 {
+  gap: 0.625rem !important;
 }
 
 section {

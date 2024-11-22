@@ -505,3 +505,111 @@ main {
 .gf-vouchers-carousel > .w-grid-list > .owl-dots > .owl-dot.active > span {
   opacity: 1 !important;
 }
+
+.gf-images-carousel > .w-grid-list {
+  height: 100% !important;
+}
+.gf-images-carousel > .w-grid-list > .owl-stage-outer {
+  height: 100% !important;
+}
+.gf-images-carousel > .w-grid-list > .owl-stage-outer > .owl-stage {
+  height: 100% !important;
+}
+.gf-images-carousel > .w-grid-list > .owl-stage-outer > .owl-stage > .owl-item > .w-grid-item > .w-grid-item-h > .w-post-elm {
+  height: 100% !important;
+}
+.gf-images-carousel > .w-grid-list > .owl-stage-outer > .owl-stage > .owl-item > .w-grid-item > .w-grid-item-h > .w-post-elm > img {
+  height: 100% !important;
+  width: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+.gf-images-carousel > .w-grid-list > .owl-nav {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: -22px !important;
+  right: -22px !important;
+  transform: translateY(-50%) !important;
+}
+@media only screen and (max-width: 960px) {
+  .gf-images-carousel > .w-grid-list > .owl-nav {
+    left: -16px !important;
+    right: -16px !important;
+  }
+}
+.gf-images-carousel > .w-grid-list > .owl-nav .owl-prev,
+.gf-images-carousel > .w-grid-list > .owl-nav .owl-next {
+  z-index: 3 !important;
+  position: relative;
+  display: block !important;
+  width: 44px !important;
+  height: 44px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #fff !important;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.0784313725) !important;
+  border-radius: 50% !important;
+  transform: none !important;
+}
+@media only screen and (max-width: 960px) {
+  .gf-images-carousel > .w-grid-list > .owl-nav .owl-prev,
+  .gf-images-carousel > .w-grid-list > .owl-nav .owl-next {
+    width: 32px !important;
+    height: 32px !important;
+  }
+}
+.gf-images-carousel > .w-grid-list > .owl-nav .owl-prev::after,
+.gf-images-carousel > .w-grid-list > .owl-nav .owl-next::after {
+  content: "" !important;
+  display: block !important;
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background-image: url("/wp-content/plugins/giftero-core/public/images/arrow-simple.svg") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+.gf-images-carousel > .w-grid-list > .owl-nav .owl-prev::before,
+.gf-images-carousel > .w-grid-list > .owl-nav .owl-next::before {
+  display: none !important;
+}
+.gf-images-carousel > .w-grid-list > .owl-nav .owl-prev {
+  transform: rotate(180deg) !important;
+}
+.gf-images-carousel > .w-grid-list > .owl-dots {
+  z-index: 5;
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 20px !important;
+  transform: translateX(-50%) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 0 !important;
+}
+.gf-images-carousel > .w-grid-list > .owl-dots > .owl-dot > span {
+  margin: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+  height: 6px !important;
+  width: 6px !important;
+  background-color: #fff !important;
+  opacity: 0.5 !important;
+}
+.gf-images-carousel > .w-grid-list > .owl-dots > .owl-dot.active > span {
+  opacity: 1 !important;
+}

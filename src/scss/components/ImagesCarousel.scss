@@ -1,0 +1,136 @@
+.gf-images-carousel {
+    & > .w-grid-list {
+        height: 100% !important;
+
+        & > .owl-stage-outer {
+            height: 100% !important;
+
+            & > .owl-stage {
+                height: 100% !important;
+
+                & > .owl-item {
+                    & > .w-grid-item {
+                        & > .w-grid-item-h {
+                            & > .w-post-elm {
+                                height: 100% !important;
+
+                                & > img {
+                                    height: 100% !important;
+                                    width: 100% !important;
+                                    object-fit: cover !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & > .owl-nav {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+
+            width: auto !important;
+            height: auto !important;
+
+            margin: 0 !important;
+            padding: 0 !important;
+
+            position: absolute !important;
+            top: 50% !important;
+            left: -22px !important;
+            right: -22px !important;
+            transform: translateY(-50%) !important;
+
+            @media only screen and (max-width: $tablet) {
+                left: -16px !important;
+                right: -16px !important;
+            }
+
+            .owl-prev,
+            .owl-next {
+                z-index: 3 !important;
+                position: relative;
+
+                display: block !important;
+                width: 44px !important;
+                height: 44px !important;
+                margin: 0 !important;
+                padding: 0 !important;
+
+                background-color: $white !important;
+                box-shadow: 0px 10px 15px 0px #00000014 !important;
+                border-radius: 50% !important;
+
+                transform: none !important;
+
+                @media only screen and (max-width: $tablet) {
+                    width: 32px !important;
+                    height: 32px !important;
+                }
+
+                &::after {
+                    content: "" !important;
+                    display: block !important;
+                    width: 20px !important;
+                    height: 20px !important;
+                    margin: 0 !important;
+                    padding: 0 !important;
+
+                    position: absolute !important;
+                    top: 50% !important;
+                    left: 50% !important;
+                    transform: translate(-50%, -50%) !important;
+
+                    background-image: imagesUrl("arrow-simple.svg") !important;
+                    background-size: contain !important;
+                    background-repeat: no-repeat !important;
+                    background-position: center !important;
+                }
+
+                &::before {
+                    display: none !important;
+                }
+            }
+
+            .owl-prev {
+                transform: rotate(180deg) !important;
+            }
+        }
+
+        & > .owl-dots {
+            z-index: 5;
+            position: absolute !important;
+            left: 50% !important;
+            bottom: 20px !important;
+            transform: translateX(-50%) !important;
+
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 8px !important;
+            padding: 0 !important;
+
+            & > .owl-dot {
+                & > span {
+                    margin: 0 !important;
+                    box-shadow: none !important;
+                    border: none !important;
+
+                    height: 6px !important;
+                    width: 6px !important;
+
+                    background-color: $white !important;
+                    opacity: 0.5 !important;
+                }
+
+                &.active {
+                    & > span {
+                        opacity: 1 !important;
+                    }
+                }
+            }
+        }
+    }
+}

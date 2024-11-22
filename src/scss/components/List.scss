@@ -8,6 +8,10 @@
             position: relative;
             padding-left: 2.6875rem;
 
+            @media only screen and (max-width: $tablet) {
+                padding-left: 1.75rem;
+            }
+
             &:not(:last-child) {
                 margin-bottom: 0.9375rem;
             }
@@ -22,6 +26,10 @@
                 position: absolute;
                 top: 0.78125rem;
                 left: 1.25rem;
+
+                @media only screen and (max-width: $tablet) {
+                    left: 0.625rem;
+                }
             }
         }
     }

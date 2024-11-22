@@ -1,3 +1,6 @@
+.title {
+  color: #0f0e2b !important;
+}
 .title-24 {
   font-size: 1.5rem;
   line-height: 1.25em;
@@ -34,6 +37,13 @@
   text-decoration: underline;
 }
 
+.gf-img-cover img {
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
 .gf-overlay {
   position: relative !important;
   overflow: hidden !important;
@@ -53,6 +63,10 @@
 }
 .gf-overlay-blue::before {
   background: linear-gradient(112deg, rgba(15, 14, 43, 0.8) 0%, rgba(15, 14, 43, 0.16) 100%);
+}
+
+.gf-video-full .w-video-h {
+  height: 100% !important;
 }
 
 .w-btn-wrapper {
@@ -265,6 +279,11 @@ main {
   position: relative;
   padding-left: 2.6875rem;
 }
+@media only screen and (max-width: 960px) {
+  .gf-ul ul > li {
+    padding-left: 1.75rem;
+  }
+}
 .gf-ul ul > li:not(:last-child) {
   margin-bottom: 0.9375rem;
 }
@@ -277,6 +296,11 @@ main {
   position: absolute;
   top: 0.78125rem;
   left: 1.25rem;
+}
+@media only screen and (max-width: 960px) {
+  .gf-ul ul > li::before {
+    left: 0.625rem;
+  }
 }
 
 .gf-accordion .w-tabs-sections .w-tabs-section {
@@ -612,4 +636,19 @@ main {
 }
 .gf-images-carousel > .w-grid-list > .owl-dots > .owl-dot.active > span {
   opacity: 1 !important;
+}
+
+.gf-map a[href^="http://maps.google.com/maps"] {
+  display: none !important;
+}
+.gf-map a[href^="https://maps.google.com/maps"] {
+  display: none !important;
+}
+.gf-map .gmnoprint a,
+.gf-map .gmnoprint span,
+.gf-map .gm-style-cc {
+  display: none;
+}
+.gf-map .gmnoprint div {
+  background: none !important;
 }

@@ -1,3 +1,12 @@
+.gf-img-cover {
+    img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+}
+
+// overlays
 .gf-overlay {
     position: relative !important;
     overflow: hidden !important;
@@ -20,6 +29,15 @@
     &-blue {
         &::before {
             background: $gradient-blue;
+        }
+    }
+}
+
+// video
+.gf-video {
+    &-full {
+        .w-video-h {
+            height: 100% !important;
         }
     }
 }
